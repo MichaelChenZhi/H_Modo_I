@@ -9,7 +9,7 @@
 #ifdef	Release
 	#define   FW_VERSION                              0x20//hardware modification
 	#define   JD_VERSION                              0x14
-	#define	Sub_Version				0x01
+	#define	Sub_Version				0x02
 #else
 	#define   FW_VERSION                              0x27//hardware modification
 	#define   JD_VERSION                              0x14 
