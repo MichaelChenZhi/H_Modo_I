@@ -1,0 +1,10 @@
+---- FW_VERSION Matches (9 in 4 files) ----
+Define.h (sources):	#define   FW_VERSION                              0x21//hardware modification
+Define.h (sources):	#define   FW_VERSION                              0x27//hardware modification
+Define.h (sources)://#define   FW_VERSION                              0x01  // fixed 3780
+Gest_trame_DER_staffa.c (sources):				p_der_queue_tx_appl->data[D_DATA_1] = FW_VERSION;
+KeyHandle.c (sources):					KNX_Buf[0] = (FW_VERSION>>4) + 0x30;
+KeyHandle.c (sources):					KNX_Buf[2] = (FW_VERSION&0x0F) + 0x30;
+Main.c (sources):		KNX_Buf_TX[3] = FW_VERSION;
+Main.c (sources):		KNX_Buf_TX[3] = FW_VERSION;
+Main.c (sources):		KNX_Buf_TX[4] = FW_VERSION;//gui version
