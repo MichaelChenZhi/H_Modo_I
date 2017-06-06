@@ -7,7 +7,7 @@
 //--------------------------------------------------------------------------------
 #define	Release
 #ifdef	Release
-	#define   FW_VERSION                              0x20//hardware modification
+	#define   FW_VERSION                              0x21//hardware modification
 	#define   JD_VERSION                              0x14
 	#define	Sub_Version				0x02
 #else
@@ -860,12 +860,12 @@ typedef enum funz_tasti
 //----------- From data sheet ----------------------------------------
 // 8-Bit Operation Mode (DMM[6] = 1)
 // If DMAH[1] = 0, the content is to be interpreted as a Character Address byte, where
-// Bits 7–0 = Character Address bits, CA[7:0] (Figure 12).
+// Bits 7Â–0 = Character Address bits, CA[7:0] (Figure 12).
 // If DMAH[1] = 1, the content is to be interpreted as a Character Attribute byte where
 // Bit 7 = Local Background Control bit, LBC (Figure 24 and Table 4)
 // Bit 6 = Blink bit, BLK
 // Bit 5 = Invert bit, INV (see Figure 24)
-// Bit 4–0 = 0
+// Bit 4Â–0 = 0
 // (The LBC, BLK, and INV bits are described in the Display Memory Mode register.)
 
 
@@ -1018,7 +1018,7 @@ typedef enum funz_tasti
 #define TargerFlagPosition  242//131
 //----------------------------------------------------------------------------------
 
-//#define TX_ENABLE   PTFD_PTFD1        //·¢ËÍÊ¹ÄÜ
+//#define TX_ENABLE   PTFD_PTFD1        //Â·Â¢Ã‹ÃÃŠÂ¹Ã„Ãœ
 //#define Reset_Key   PTCD_PTCD4
 
 
@@ -1542,7 +1542,7 @@ typedef struct{
 
 //----------------------------------------------------------------------------------
 #define	SpaceByte		2
-//#define TX_ENABLE	  PTFD_PTFD1		//·¢ËÍÊ¹ÄÜ
+//#define TX_ENABLE	  PTFD_PTFD1		//Â·Â¢Ã‹ÃÃŠÂ¹Ã„Ãœ
 //#define Reset_Key	  PTCD_PTCD4
 
 #define	MaxObject_In_OneMenu	8//one menu
@@ -1833,7 +1833,7 @@ typedef struct
 typedef struct { 
   uchar    Head1;    // Always is 0x55=STX1. 
   uchar    Head2;    // Always is 0xAA=STX2. 
-  unsigned int      MachineID;  // terminal¡¯s ID. 
+  unsigned int      MachineID;  // terminalÂ¡Â¯s ID. 
   unsigned int      Reserved;  // Reserved 
   unsigned int    Command; // Command ID 
   //long unsigned int  Length;  // Input Parameter 1 
@@ -1847,7 +1847,7 @@ typedef struct {
 typedef struct { 
   uchar    Head1;    // Always is 0x55=STX1. 
   uchar    Head2;    // Always is 0xAA=STX2. 
-  unsigned int      MachineID;  // terminal¡¯s ID. 
+  unsigned int      MachineID;  // terminalÂ¡Â¯s ID. 
   unsigned int      SRC_ADDR;  // 
   unsigned int      Dest_ADDR;  // 
   uchar    nlength; // 
